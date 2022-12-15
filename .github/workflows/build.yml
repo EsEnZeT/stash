@@ -168,7 +168,7 @@ jobs:
         gzip: false
 
     - name: Development Docker
-      if: ${{ github.repository == 'stashapp/stash' && github.event_name == 'push' && github.ref == 'refs/heads/develop' }}
+#       if: ${{ github.repository == 'stashapp/stash' && github.event_name == 'push' && github.ref == 'refs/heads/develop' }}
       env:
         DOCKER_CLI_EXPERIMENTAL: enabled
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
